@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nido, Palawan - Paradise Gateway</title>
+    <meta name="description" content="Explore El Nido, Palawan: limestone lagoons, hidden beaches, endangered wildlife and travel tips.">
+    <meta name="theme-color" content="#1c2629">
+    <meta property="og:title" content="El Nido, Palawan - Paradise Gateway">
+    <meta property="og:description" content="Limestone lagoons, hidden beaches and the rare wildlife of Palawan.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127965;</text></svg>">
+    <link rel="preload" as="image" href="images/elnido.avif" type="image/avif">
+
+    <!-- Load order: tokens (variables) -> base (shared) -> this page's file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#endangered-species">Endangered Species</a>
+        <a href="#slideshow">Gallery</a>
+        <a href="#explore">Explore</a>
+        <button type="button" class="motion-toggle">Pause video</button>
+    </nav>
+
+    <!-- Fixed background video.
+         TODO (performance): compress this file with ffmpeg (see the course doc),
+         save it as media/bg-loop.mp4 + media/bg-loop.webm, and update the sources. -->
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata"
+           poster="images/elnido.avif" aria-hidden="true">
+        <source src="images/12805776_3840_2160_30fps.mp4" type="video/mp4">
+    </video>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to El Nido</h1>
+            <p class="hero-subtitle">Palawan</p>
+        </div>
+    </header>
+
+    <main id="main" class="main-content">
+
+        <!-- About: native <details>. Click the heading to open it. -->
+        <details id="about" class="card card-left surface">
+            <summary><h2>What is this place?</h2></summary>
+            <p>El Nido is a Philippine municipality on Palawan island. It’s known for white-sand beaches, coral reefs, and as the gateway to the Bacuit archipelago, a group of majestic islands featuring dramatic steep karst cliffs.</p>
+        </details>
+
+        <details id="highlights" class="card card-right surface">
+            <summary><h2>Discover the Wonders</h2></summary>
+            <p>Immerse yourself in crystal clear turquoise lagoons, secret hidden beaches, and world-class diving spots across Palawan's finest waters.</p>
+            <!-- VERIFY: these three statistics need a cited source, or remove them. -->
+            <ul class="stats-row">
+                <li class="stat-box">
+                    <span class="stat-number">45+</span>
+                    <span class="stat-label">Islands &amp; Islets</span>
+                </li>
+                <li class="stat-box">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Coral Species</span>
+                </li>
+                <li class="stat-box">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Pristine Waters</span>
+                </li>
+            </ul>
+        </details>
+
+        <!-- Endangered species preview.
+             VERIFY every status below against the IUCN Red List (iucnredlist.org). -->
+        <section id="endangered-species" class="species-section surface" aria-labelledby="species-title">
+            <div class="species-intro">
+                <h2 id="species-title">Endangered Wildlife &amp; Flora</h2>
+                <p>Protecting the rare and vulnerable endemic animals and plants native to Palawan.</p>
+            </div>
+
+            <h3 class="species-subheading">Endangered Animals</h3>
+            <div class="species-grid">
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/species1.jpg" alt="Palawan Hornbill" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--vulnerable">Vulnerable</span>
+                        <h4>Palawan Hornbill</h4>
+                        <p class="sci-name">Anthracoceros marchei</p>
+                        <p class="desc">A threatened endemic bird species known for its distinctive casque and loud calling habits in native lowland forests.</p>
+                    </div>
+                </article>
+
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/species2.jpg" alt="Philippine Pangolin" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--critical">Critically Endangered</span>
+                        <h4>Philippine Pangolin</h4>
+                        <p class="sci-name">Manis culionensis</p>
+                        <p class="desc">Also known as the Palawan pangolin, this solitary nocturnal mammal feeds primarily on ants and termites.</p>
+                    </div>
+                </article>
+
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/species3.jpg" alt="Green Sea Turtle" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--endangered">Endangered</span>
+                        <h4>Green Sea Turtle</h4>
+                        <p class="sci-name">Chelonia mydas</p>
+                        <p class="desc">A large marine turtle that frequently nests on the protected sandy beaches and feeds in the coral reefs around El Nido.</p>
+                    </div>
+                </article>
+
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/species4.jpg" alt="Palawan Peacock-Pheasant" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--vulnerable">Vulnerable</span>
+                        <h4>Peacock-Pheasant</h4>
+                        <p class="sci-name">Polyplectron napoleonis</p>
+                        <p class="desc">A medium-sized pheasant recognized by its striking iridescent blue-green crest and eye-spots on its tail feathers.</p>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="species-subheading">Endangered Plants</h3>
+            <div class="species-grid">
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/plant1.jpg" alt="Attenborough’s Pitcher Plant" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--critical">Critically Endangered</span>
+                        <h4>Attenborough's Pitcher Plant</h4>
+                        <p class="sci-name">Nepenthes attenboroughii</p>
+                        <p class="desc">A giant carnivorous pitcher plant endemic to Palawan’s ultramafic mountain slopes, capable of holding up to 1.5 liters of fluid.</p>
+                    </div>
+                </article>
+
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/plant2.jpg" alt="Palawan Cherry Blossom" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--vulnerable">Vulnerable</span>
+                        <h4>Palawan Cherry (Balayong)</h4>
+                        <p class="sci-name">Cassia nodosa</p>
+                        <p class="desc">Famous for its stunning pink-and-white seasonal blooms, this native tree is a cultural symbol of Palawan’s biodiversity.</p>
+                    </div>
+                </article>
+
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/plant3.jpg" alt="Palawan Lady’s Slipper Orchid" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--critical">Critically Endangered</span>
+                        <h4>Palawan Slipper Orchid</h4>
+                        <p class="sci-name">Paphiopedilum fowliei</p>
+                        <p class="desc">A rare, ground-dwelling orchid with mottled leaves and delicate blooms, severely threatened by habitat loss and illegal collection.</p>
+                    </div>
+                </article>
+
+                <article class="species-card">
+                    <button type="button" class="species-thumb" data-lightbox>
+                        <img src="images/plant4.jpg" alt="Almaciga Tree" width="420" height="200" loading="lazy" decoding="async">
+                    </button>
+                    <div class="species-info">
+                        <span class="badge badge--endangered">Endangered</span>
+                        <h4>Almaciga (Manila Copal)</h4>
+                        <p class="sci-name">Agathis philippinensis</p>
+                        <p class="desc">A towering ancient conifer valued for its natural resin, over-harvested in old-growth forests across Palawan.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Gallery slideshow -->
+        <section id="slideshow" class="banner-center surface" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">Gallery</h2>
+            <p class="banner-quote">“Lost in paradise, found in El Nido.”</p>
+
+            <div class="slideshow" role="region" aria-roledescription="carousel" aria-label="El Nido photo slideshow">
+                <div class="slide active">
+                    <img src="images/elnido1.jpg" alt="Dramatic limestone cliffs framing a turquoise lagoon in El Nido" width="800" height="450">
+                </div>
+                <div class="slide">
+                    <img src="images/elnido2.jpg" alt="Traditional outrigger boats resting on a white sand beach at sunset" width="800" height="450" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/elnido3.jpg" alt="Hidden cove accessible only through a narrow cave opening" width="800" height="450" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/elnido4.jpg" alt="Vibrant coral reef teeming with tropical marine life" width="800" height="450" loading="lazy">
+                </div>
+
+                <button type="button" class="slide-btn prev-btn" aria-label="Previous photo">&#10094;</button>
+                <button type="button" class="slide-btn next-btn" aria-label="Next photo">&#10095;</button>
+                <div class="slide-dots"></div>
+            </div>
+        </section>
+
+        <!-- Explore: real links (work without JavaScript) -->
+        <section id="explore" aria-labelledby="explore-title">
+            <h2 id="explore-title" class="section-heading">Explore More</h2>
+            <div class="mini-grid">
+                <a class="mini-card surface" href="tourist-spots.html">
+                    <h3>Tourist Spots</h3>
+                    <p>Explore destinations, photos, and travel guides &rarr;</p>
+                </a>
+                <a class="mini-card surface" href="endangered-species.html">
+                    <h3>Endangered Species</h3>
+                    <p>Discover threatened wildlife and conservation in El Nido &rarr;</p>
+                </a>
+                <a class="mini-card surface" href="travel-tips.html">
+                    <h3>Travel Tips</h3>
+                    <p>Check essential guides, packing lists, and best times to visit &rarr;</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>El Nido, Palawan. Always confirm current fees and rules with the local tourism office before you travel.</p>
+    </footer>
+
+    <!-- Lightbox: a native <dialog>. Opened by any element with data-lightbox. -->
+    <dialog id="lightbox" aria-label="Enlarged image">
+        <figure>
+            <img alt="">
+            <figcaption></figcaption>
+        </figure>
+        <form method="dialog"><button class="close-btn">&times; Close</button></form>
+    </dialog>
+
+</body>
+</html>

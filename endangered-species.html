@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Species - El Nido, Palawan</title>
+    <meta name="description" content="Meet the vulnerable, endangered and critically endangered wildlife and plants of El Nido, Palawan, and learn how visitors can help protect them.">
+    <meta name="theme-color" content="#1c2629">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127965;</text></svg>">
+    <link rel="preload" as="image" href="images/elnido.avif" type="image/avif">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html#explore" class="back-link">&larr; Back to Main Page</a>
+        <a href="#vulnerable">Vulnerable</a>
+        <a href="#endangered">Endangered</a>
+        <a href="#critically-endangered">Critically Endangered</a>
+        <a href="#endangered-plants">Endangered Plants</a>
+        <a href="#wildlife-gallery">Gallery</a>
+        <a href="#conservation-tips">How to Help</a>
+        <button type="button" class="motion-toggle">Pause video</button>
+    </nav>
+
+    <!-- Same video path as every other page (it was missing "images/" before) -->
+    <video class="bg-video" autoplay muted loop playsinline preload="metadata"
+           poster="images/elnido.avif" aria-hidden="true">
+        <source src="images/12805776_3840_2160_30fps.mp4" type="video/mp4">
+    </video>
+
+    <header id="top" class="hero">
+        <div class="hero-content">
+            <h1>Endangered Species</h1>
+            <p class="hero-subtitle">Protecting the Wildlife &amp; Flora of El Nido, Palawan</p>
+        </div>
+    </header>
+
+    <main id="main" class="main-content">
+
+        <section class="intro-banner surface">
+            <h2>Guardians of Palawan’s Biodiversity</h2>
+            <p>El Nido’s limestone forests, mangroves, and coral reefs shelter rare wildlife and endemic plants classified under the IUCN Red List. Explore the species below by conservation status.</p>
+            <!-- VERIFY: cite a source for these statistics, or remove them. -->
+            <ul class="stats-row">
+                <li class="stat-box">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Threat Classifications</span>
+                </li>
+                <li class="stat-box">
+                    <span class="stat-number">903 km²</span>
+                    <span class="stat-label">Protected Managed Area</span>
+                </li>
+                <li class="stat-box">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Endemic Palawan Species</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- TODO: replace the generic photo alt text below with a real description of each picture. -->
+
+        <section id="vulnerable" class="category-wrapper" aria-labelledby="vulnerable-title">
+            <div class="category-header surface" data-status="vulnerable">
+                <span class="badge badge--vulnerable">IUCN Status • VU</span>
+                <h2 id="vulnerable-title">Vulnerable Species</h2>
+                <p>Species facing a high risk of extinction in the wild due to shrinking forest habitats and human disturbance.</p>
+            </div>
+
+            <article class="feature surface" data-status="vulnerable">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/vu-species1-main.jpg" alt="Palawan Peacock-Pheasant" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Palawan Peacock-Pheasant">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/vu-species1-main.jpg">
+                            <img src="images/vu-species1-main.jpg" alt="Palawan Peacock-Pheasant, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/vu-species1-view2.jpg">
+                            <img src="images/vu-species1-view2.jpg" alt="Palawan Peacock-Pheasant, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/vu-species1-view3.jpg">
+                            <img src="images/vu-species1-view3.jpg" alt="Palawan Peacock-Pheasant, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--vulnerable">Vulnerable</span>
+                    <h3>Palawan Peacock-Pheasant (Tandikan)</h3>
+                    <p class="sci-name">Polyplectron napoleonis</p>
+                    <p class="habitat">Habitat: Humid lowland forest floors of El Nido</p>
+                    <p class="desc">A striking ground-dwelling bird endemic to Palawan, celebrated for the male’s iridescent blue-green plumage, white eyebrow stripes, and shimmering tail eyespots.</p>
+                    <ul class="facts">
+                        <li>Endemic to the island of Palawan</li>
+                        <li>Featured as an official cultural emblem of Palawan heritage</li>
+                        <li>Threatened by deforestation and illegal capture for the pet trade</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature surface reverse" data-status="vulnerable">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/vu-species2-main.jpg" alt="Palawan Binturong" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Palawan Binturong">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/vu-species2-main.jpg">
+                            <img src="images/vu-species2-main.jpg" alt="Palawan Binturong, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/vu-species2-view2.jpg">
+                            <img src="images/vu-species2-view2.jpg" alt="Palawan Binturong, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/vu-species2-view3.jpg">
+                            <img src="images/vu-species2-view3.jpg" alt="Palawan Binturong, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--vulnerable">Vulnerable</span>
+                    <h3>Palawan Binturong (Bearcat)</h3>
+                    <p class="sci-name">Arctictis binturong whitei</p>
+                    <p class="habitat">Habitat: Dense forest canopies of northern Palawan</p>
+                    <p class="desc">An arboreal mammal known for its thick black fur, tufted ears, and muscular prehensile tail, playing a vital role as a seed disperser in El Nido’s forests.</p>
+                    <ul class="facts">
+                        <li>Uses a muscular prehensile tail like a fifth limb when climbing</li>
+                        <li>Disperses strangler fig seeds essential for forest regeneration</li>
+                        <li>Population declining due to shrinking primary forest cover</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="endangered" class="category-wrapper" aria-labelledby="endangered-title">
+            <div class="category-header surface" data-status="endangered">
+                <span class="badge badge--endangered">IUCN Status • EN</span>
+                <h2 id="endangered-title">Endangered Species</h2>
+                <p>Species facing a very high risk of extinction in the wild and requiring active habitat and marine protection.</p>
+            </div>
+
+            <article class="feature surface" data-status="endangered">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/en-species1-main.jpg" alt="Green Sea Turtle" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Green Sea Turtle">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/en-species1-main.jpg">
+                            <img src="images/en-species1-main.jpg" alt="Green Sea Turtle, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/en-species1-view2.jpg">
+                            <img src="images/en-species1-view2.jpg" alt="Green Sea Turtle, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/en-species1-view3.jpg">
+                            <img src="images/en-species1-view3.jpg" alt="Green Sea Turtle, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--endangered">Endangered</span>
+                    <h3>Green Sea Turtle (Pawikan)</h3>
+                    <p class="sci-name">Chelonia mydas</p>
+                    <p class="habitat">Habitat: Seagrass beds &amp; coastal waters of Bacuit Bay</p>
+                    <p class="desc">A large marine turtle that grazes on El Nido’s underwater seagrass meadows and returns to quiet white-sand beaches across Bacuit Bay to nest.</p>
+                    <ul class="facts">
+                        <li>Keeps seagrass beds healthy and productive for reef fish</li>
+                        <li>Frequently spotted gliding over shallow reefs around Miniloc and Dilumacad</li>
+                        <li>Threatened by marine plastic ingestion, boat propellers, and habitat loss</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature surface reverse" data-status="endangered">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/en-species2-main.jpg" alt="Calamian Hog Deer" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Calamian Hog Deer">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/en-species2-main.jpg">
+                            <img src="images/en-species2-main.jpg" alt="Calamian Hog Deer, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/en-species2-view2.jpg">
+                            <img src="images/en-species2-view2.jpg" alt="Calamian Hog Deer, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/en-species2-view3.jpg">
+                            <img src="images/en-species2-view3.jpg" alt="Calamian Hog Deer, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--endangered">Endangered</span>
+                    <h3>Calamian Hog Deer</h3>
+                    <p class="sci-name">Axis calamianensis</p>
+                    <p class="habitat">Habitat: Forest edges &amp; grasslands of northern Palawan</p>
+                    <p class="desc">A compact, elusive deer species known for its low head-down running posture through thick underbrush and its highly restricted island range.</p>
+                    <ul class="facts">
+                        <li>Found only in the Calamianes and northern Palawan island group</li>
+                        <li>Active at dawn and dusk, sheltering in dense forest cover by day</li>
+                        <li>Threatened by agricultural expansion and illegal hunting</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="critically-endangered" class="category-wrapper" aria-labelledby="critically-endangered-title">
+            <div class="category-header surface" data-status="critical">
+                <span class="badge badge--critical">IUCN Status • CR</span>
+                <h2 id="critically-endangered-title">Critically Endangered Species</h2>
+                <p>Species facing an extremely high risk of extinction in the immediate future without strict conservation enforcement.</p>
+            </div>
+
+            <article class="feature surface" data-status="critical">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/cr-species1-main.jpg" alt="Philippine Pangolin" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Philippine Pangolin">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/cr-species1-main.jpg">
+                            <img src="images/cr-species1-main.jpg" alt="Philippine Pangolin, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/cr-species1-view2.jpg">
+                            <img src="images/cr-species1-view2.jpg" alt="Philippine Pangolin, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/cr-species1-view3.jpg">
+                            <img src="images/cr-species1-view3.jpg" alt="Philippine Pangolin, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--critical">Critically Endangered</span>
+                    <h3>Philippine Pangolin (Balintong)</h3>
+                    <p class="sci-name">Manis culionensis</p>
+                    <p class="habitat">Habitat: Lowland forests &amp; mangroves of Palawan</p>
+                    <p class="desc">Covered in overlapping protective keratin scales, this solitary nocturnal mammal feeds exclusively on ants and termites and is the most heavily trafficked mammal in the region.</p>
+                    <ul class="facts">
+                        <li>Found exclusively in the Palawan faunal region</li>
+                        <li>Curls into a tight armored ball when threatened</li>
+                        <li>Severely threatened by illegal wildlife trafficking and habitat loss</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature surface reverse" data-status="critical">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/cr-species2-main.jpg" alt="Hawksbill Sea Turtle" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Hawksbill Sea Turtle">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/cr-species2-main.jpg">
+                            <img src="images/cr-species2-main.jpg" alt="Hawksbill Sea Turtle, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/cr-species2-view2.jpg">
+                            <img src="images/cr-species2-view2.jpg" alt="Hawksbill Sea Turtle, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/cr-species2-view3.jpg">
+                            <img src="images/cr-species2-view3.jpg" alt="Hawksbill Sea Turtle, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--critical">Critically Endangered</span>
+                    <h3>Hawksbill Sea Turtle (Pawikan)</h3>
+                    <p class="sci-name">Eretmochelys imbricata</p>
+                    <p class="habitat">Habitat: Coral reefs &amp; nesting beaches of Bacuit Bay</p>
+                    <p class="desc">Recognized by its narrow pointed beak and patterned amber shell, this sea turtle plays a crucial role in keeping El Nido’s coral reefs healthy by feeding on sea sponges.</p>
+                    <ul class="facts">
+                        <li>Nests on quiet white-sand beaches across El Nido</li>
+                        <li>Maintains reef balance by controlling sponge populations</li>
+                        <li>Threatened by illegal shell trade, plastic pollution, and warming seas</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="endangered-plants" class="category-wrapper" aria-labelledby="endangered-plants-title">
+            <div class="category-header surface" data-status="critical">
+                <span class="badge badge--critical">Endemic Flora</span>
+                <h2 id="endangered-plants-title">Endangered Plants of Palawan</h2>
+                <p>Rare botanical treasures native to Palawan’s limestone cliffs and ultramafic mountain forests, threatened by habitat loss and illegal collection.</p>
+            </div>
+
+            <article class="feature surface" data-status="critical">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/plant1-main.jpg" alt="Attenborough’s Pitcher Plant" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Attenborough’s Pitcher Plant">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/plant1-main.jpg">
+                            <img src="images/plant1-main.jpg" alt="Attenborough’s Pitcher Plant, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/plant1-view2.jpg">
+                            <img src="images/plant1-view2.jpg" alt="Attenborough’s Pitcher Plant, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/plant1-view3.jpg">
+                            <img src="images/plant1-view3.jpg" alt="Attenborough’s Pitcher Plant, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--critical">Critically Endangered</span>
+                    <h3>Attenborough’s Pitcher Plant</h3>
+                    <p class="sci-name">Nepenthes attenboroughii</p>
+                    <p class="habitat">Habitat: High-altitude ultramafic mountain slopes of Palawan</p>
+                    <p class="desc">One of the largest carnivorous pitcher plants in the world, producing massive bell-shaped pitchers capable of holding up to 1.5 liters of digestive fluid.</p>
+                    <ul class="facts">
+                        <li>Endemic to a single mountain range in Palawan</li>
+                        <li>Traps insects and small invertebrates to survive in nutrient-poor soil</li>
+                        <li>Severely threatened by illegal plant poaching and climate shifts</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature surface reverse" data-status="endangered">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/plant2-main.jpg" alt="Almaciga Tree" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Almaciga Tree">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/plant2-main.jpg">
+                            <img src="images/plant2-main.jpg" alt="Almaciga Tree, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/plant2-view2.jpg">
+                            <img src="images/plant2-view2.jpg" alt="Almaciga Tree, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/plant2-view3.jpg">
+                            <img src="images/plant2-view3.jpg" alt="Almaciga Tree, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--endangered">Endangered</span>
+                    <h3>Almaciga (Manila Copal)</h3>
+                    <p class="sci-name">Agathis philippinensis</p>
+                    <p class="habitat">Habitat: Old-growth lowland &amp; montane rainforests</p>
+                    <p class="desc">A towering ancient conifer prized for its aromatic natural resin (copal), which is traditionally harvested by indigenous communities for varnishes and incense.</p>
+                    <ul class="facts">
+                        <li>Can grow over 60 meters tall in undisturbed Palawan forests</li>
+                        <li>Provides vital canopy shelter for endemic hornbills and mammals</li>
+                        <li>Threatened by over-tapping of resin and illegal logging</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature surface" data-status="critical">
+                <div class="feature-media">
+                    <button type="button" class="main-photo" data-lightbox>
+                        <img src="images/plant3-main.jpg" alt="Palawan Lady’s Slipper Orchid" width="640" height="330" loading="lazy">
+                    </button>
+                    <div class="thumb-strip" role="group" aria-label="Choose a photo of Palawan Lady’s Slipper Orchid">
+                        <button type="button" class="thumb" aria-pressed="true" data-full="images/plant3-main.jpg">
+                            <img src="images/plant3-main.jpg" alt="Palawan Lady’s Slipper Orchid, photo 1 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/plant3-view2.jpg">
+                            <img src="images/plant3-view2.jpg" alt="Palawan Lady’s Slipper Orchid, photo 2 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                        <button type="button" class="thumb" aria-pressed="false" data-full="images/plant3-view3.jpg">
+                            <img src="images/plant3-view3.jpg" alt="Palawan Lady’s Slipper Orchid, photo 3 of 3" width="84" height="60" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <span class="badge badge--critical">Critically Endangered</span>
+                    <h3>Palawan Lady’s Slipper Orchid</h3>
+                    <p class="sci-name">Paphiopedilum fowliei</p>
+                    <p class="habitat">Habitat: Shaded limestone &amp; mossy forest floors</p>
+                    <p class="desc">A rare ground-dwelling orchid distinguished by its dark mottled leaves and delicate pouch-shaped blossoms adapted to shaded karst environments.</p>
+                    <ul class="facts">
+                        <li>Strictly endemic to Palawan’s forest ecosystems</li>
+                        <li>Pollinated by hoverflies lured into its slipper-shaped labellum</li>
+                        <li>Listed under CITES Appendix I due to extreme poaching pressure</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="wildlife-gallery" class="gallery-section surface" aria-labelledby="wildlife-gallery-title">
+            <div class="gallery-intro">
+                <h2 id="wildlife-gallery-title">Wildlife &amp; Habitat Gallery</h2>
+                <p>Select any photo to view it in full screen.</p>
+            </div>
+            <!-- TODO: replace the placeholder captions and alt text with real descriptions. -->
+            <div class="photo-grid">
+                <figure class="photo-card">
+                    <button type="button" data-lightbox>
+                        <img src="images/wildlife1.jpg" alt="Wildlife and habitat of El Nido, photo 1" width="460" height="220" loading="lazy">
+                    </button>
+                    <figcaption>Wildlife and habitat of El Nido (1)</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <button type="button" data-lightbox>
+                        <img src="images/wildlife2.jpg" alt="Wildlife and habitat of El Nido, photo 2" width="460" height="220" loading="lazy">
+                    </button>
+                    <figcaption>Wildlife and habitat of El Nido (2)</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <button type="button" data-lightbox>
+                        <img src="images/wildlife3.jpg" alt="Wildlife and habitat of El Nido, photo 3" width="460" height="220" loading="lazy">
+                    </button>
+                    <figcaption>Wildlife and habitat of El Nido (3)</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <button type="button" data-lightbox>
+                        <img src="images/wildlife4.jpg" alt="Wildlife and habitat of El Nido, photo 4" width="460" height="220" loading="lazy">
+                    </button>
+                    <figcaption>Wildlife and habitat of El Nido (4)</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="conservation-tips" aria-labelledby="tips-title">
+            <h2 id="tips-title" class="section-heading">How Visitors Can Protect Wildlife</h2>
+            <div class="mini-grid">
+                <article class="mini-card surface">
+                    <h3>Keep a Safe Distance</h3>
+                    <p>Never touch, feed, or chase sea turtles, birds, or forest animals while exploring.</p>
+                </article>
+                <article class="mini-card surface">
+                    <h3>Protect Nesting Shores</h3>
+                    <p>Keep beaches free of trash and bright flashlights at night so pawikan hatchlings can reach the sea.</p>
+                </article>
+                <article class="mini-card surface">
+                    <h3>Zero Wildlife Trade</h3>
+                    <p>Never buy exotic pets, wild orchids, or souvenirs made from shells, corals, or forest products.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>El Nido, Palawan. Conservation statuses follow the IUCN Red List; check iucnredlist.org for the latest assessments.</p>
+    </footer>
+
+    <dialog id="lightbox" aria-label="Enlarged image">
+        <figure>
+            <img alt="">
+            <figcaption></figcaption>
+        </figure>
+        <form method="dialog"><button class="close-btn">&times; Close</button></form>
+    </dialog>
+
+</body>
+</html>

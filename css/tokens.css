@@ -1,0 +1,59 @@
+/* ==========================================================================
+   tokens.css  -  design tokens ONLY (variables, no rules).
+   Palette: turquoise, lagoon blue, warm sand, deep limestone.
+   Re-theme the whole site by editing this file.
+   ========================================================================== */
+:root {
+  /* --- Raw palette ----------------------------------------------------- */
+  --limestone-950: #141c1e;
+  --limestone-900: #1c2629;   /* deep limestone: darkest surfaces, main text */
+  --limestone-500: #5a6b6e;   /* muted text on sand (6:1 contrast) */
+
+  --sand-50:  #fcf9f3;        /* warm sand: cards */
+  --sand-100: #f5eddf;        /* page sheet */
+  --sand-200: #ebdfc8;
+  --sand-300: #dccaa8;        /* hairlines */
+  --sand-500: #c9a15a;        /* deeper sand accent */
+
+  --lagoon-800: #093e55;      /* lagoon blue */
+  --lagoon-700: #0b4f6c;
+  --lagoon-600: #116b8c;      /* links and accents on sand (5:1) */
+  --lagoon-500: #1a87ad;
+
+  --turquoise-500: #16b3a4;   /* turquoise: decorative accents only on sand */
+  --turquoise-400: #38cdbf;   /* accents on dark surfaces */
+  --turquoise-200: #aeeae3;
+  --turquoise-100: #d8f5f1;
+
+  /* --- Roles (use these in components, not the raw palette) ------------- */
+  --bg: var(--sand-100);
+  --surface: var(--sand-50);
+  --ink: var(--limestone-900);
+  --ink-soft: var(--limestone-500);
+  --line: var(--sand-300);
+
+  /* Conservation statuses: muted so they harmonize with the palette */
+  --status-vu: #c99a2e;
+  --status-en: #c2652a;
+  --status-cr: #b8432f;
+
+  /* --- Type ------------------------------------------------------------- */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* --- Shape, depth, motion -------------------------------------------- */
+  --radius-lg: 40px;
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow-soft: 0 1px 2px rgb(20 28 30 / 0.06), 0 14px 32px -14px rgb(20 28 30 / 0.2);
+  --shadow-lift: 0 2px 4px rgb(20 28 30 / 0.08), 0 28px 48px -18px rgb(11 79 108 / 0.4);
+  --ease-out: cubic-bezier(0.22, 0.8, 0.2, 1);
+
+  /* --- Layout ------------------------------------------------------------ */
+  --gutter: clamp(24px, 6vw, 96px);
+  --nav-offset: 92px;
+  --z-nav: 100;
+  --z-skip: 300;
+
+  interpolate-size: allow-keywords;   /* lets <details> animate its height (where supported) */
+}
